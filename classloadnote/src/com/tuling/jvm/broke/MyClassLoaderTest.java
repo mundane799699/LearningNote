@@ -23,6 +23,7 @@ public class MyClassLoaderTest {
 
         }
 
+        @Override
         protected Class<?> findClass(String name) throws ClassNotFoundException {
             try {
                 byte[] data = loadByte(name);
